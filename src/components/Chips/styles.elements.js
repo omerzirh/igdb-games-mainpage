@@ -8,8 +8,9 @@ export const ChipsWrapper = styled.button`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
+  width: fit-content;
   border-radius: 8px;
+  padding:0.5rem 1rem;
   &:hover {
     outline: "1px solid #6B38FB";
   }
@@ -24,7 +25,8 @@ export const Button = styled.button`
 
   font-size: 1em;
   margin: 1em;
-  padding: 0.25em 1em;
+  /* padding: 0.25em 1em; */
+  padding: 1rem;
   border: 2px solid palevioletred;
   border-radius: 3px;
 `;

@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import PageArrow from "../../components/PageArrow";
 import Profile from "../../components/Profile";
 import SearchBar from "../../components/SearchBar";
@@ -12,19 +12,17 @@ function CollapsibleExample() {
     setProducts(value);
   };
   return (
-    <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-           <PageArrow side="left"/>
-           <PageArrow side="right"/>
-           <SearchBar result={products} onChange={handleProductChange}/>
-          </Nav>
-          <Nav>
-        <Profile/>
-          </Nav>
-        </Navbar.Collapse>
+    <Navbar collapseOnSelect expand="sm" variant="light" style={{backgroundColor:"#0C0D21"}}>
+      <Navbar.Collapse id="responsive-navbar-nav" style={{marginLeft:"400px"}}>
+        <Nav className="me-auto" >
+          <PageArrow side="left" />
+          <PageArrow side="right" />
+          <SearchBar result={products} onChange={handleProductChange} />
+        </Nav>
+        <Nav>
+          <Profile />
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
