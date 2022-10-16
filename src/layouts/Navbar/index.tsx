@@ -6,17 +6,30 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import PageArrow from "../../components/PageArrow";
 import Profile from "../../components/Profile";
 import SearchBar from "../../components/SearchBar";
+import { ArrowWrapper } from "./styles.elements";
 function CollapsibleExample() {
   const [products, setProducts] = useState([]);
   const handleProductChange = (value: any) => {
     setProducts(value);
   };
   return (
-    <Navbar collapseOnSelect expand="sm" variant="light" style={{backgroundColor:"#0C0D21"}}>
-      <Navbar.Collapse id="responsive-navbar-nav" style={{marginLeft:"400px"}}>
-        <Nav className="me-auto" >
-          <PageArrow side="left" />
-          <PageArrow side="right" />
+    <Navbar
+      collapseOnSelect
+      expand="sm"
+      variant="light"
+      style={{ backgroundColor: "#0C0D21"}}
+      fixed="top"
+    >
+      <Navbar.Collapse
+        id="responsive-navbar-nav"
+        style={{ marginLeft: "400px" }}
+      >
+        <Nav className="me-auto" style={{columnGap:"30px", height:"41px"}}>
+          <ArrowWrapper>
+            <PageArrow side="left" />
+            <PageArrow side="right" />
+          </ArrowWrapper>
+
           <SearchBar result={products} onChange={handleProductChange} />
         </Nav>
         <Nav>

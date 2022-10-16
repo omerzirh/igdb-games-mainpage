@@ -25,13 +25,7 @@ function App() {
 
       <Navbar />
       <div style={{marginLeft:"400px"}} >
-        <h1 style={{color:"white"}}> Games</h1>
-        <div className="d-flex flex-row align-items-start justify-content-start">
-          <Chips>#All</Chips>
-          <Chips>#Recent</Chips>
-          <Chips>#Upcoming</Chips>
-          <Chips>#Top100</Chips>
-        </div>
+    
      <Games/>
       </div>
   </div>

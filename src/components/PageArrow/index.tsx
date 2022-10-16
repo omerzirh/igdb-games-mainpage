@@ -8,7 +8,7 @@ export default function Index(props:any) {
 
   return (
     <ArrowWrapper>
-        <ArrowImg src={ArrowSvg} width="7.5px" height="15px" alt="arrow" style={{transform:side}}/>
+        <ArrowImg src={ArrowSvg} width="10px" height="20px" alt="arrow" style={{transform:side}}/>
     </ArrowWrapper>
   )
 }

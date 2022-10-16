@@ -10,7 +10,7 @@ width:fit-content;
 border-radius:10px;
 `;
 export const InputWrapper = styled.div`
- width: 50%;
+ width: 100%;
   height: 3.5rem;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ export const InputWrapper = styled.div`
 `;
 export const SearchInput = styled.input`
   font-size: 1rem;
-  color: black;
+  color: white;
   width: 100%;
   height: 100%;
   padding: 0 0 0 1rem;

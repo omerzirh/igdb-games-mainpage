@@ -39,3 +39,21 @@ export const sidebarOthers=[
         icon:faCircleInfo
     }
 ];
+export const chipsData = [
+    {
+        id:"all_ch",
+        name:"All"
+    },
+    {
+        id:"rec_ch",
+        name:"Recent"
+    },
+    {
+        id:"upc_ch",
+        name:"Upcoming"
+    },
+    {
+        id:"top_hun_ch",
+        name:"Top100"
+    },
+]
