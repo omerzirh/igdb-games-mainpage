@@ -1,0 +1,59 @@
+import {faTrophy, faBullseye, faPeopleGroup, faMicrophone,faChessKnight,faW,faCircleInfo} from "@fortawesome/free-solid-svg-icons";
+
+export const sidebarActivities=[
+    {
+        id:'act_1',
+        name:"Games",
+        icon:faTrophy
+    },
+    {
+        id:'act_2',
+        name:"Tournaments",
+        icon:faBullseye
+    },
+    {
+        id:'act_3',
+        name:"Teams",
+        icon:faPeopleGroup
+    }
+];
+export const sidebarOthers=[
+    {
+        id:'oth_1',
+        name:"News",
+        icon:faMicrophone
+    },
+    {
+        id:'oth_2',
+        name:"Partners",
+        icon:faChessKnight
+    },
+    {
+        id:'oth_3',
+        name:"About",
+        icon:faW
+    },
+    {
+        id:'act_3',
+        name:"Help",
+        icon:faCircleInfo
+    }
+];
+export const chipsData = [
+    {
+        id:"all_ch",
+        name:"All"
+    },
+    {
+        id:"rec_ch",
+        name:"Recent"
+    },
+    {
+        id:"upc_ch",
+        name:"Upcoming"
+    },
+    {
+        id:"top_hun_ch",
+        name:"Top100"
+    },
+]
