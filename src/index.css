@@ -9,5 +9,6 @@ body,html {
   font-family: 'Pragmatica' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0c0d21 !important;
 }
 

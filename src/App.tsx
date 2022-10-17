@@ -3,10 +3,10 @@ import "./App.css";
 import "./components/SearchBar/index.css";
 import Navbar from "./layouts/Navbar";
 import Sidebar from "./layouts/Sidebar";
-import Main from "./layouts/Main";
+import MainPage from "./pages/MainPage";
 function App() {
   return (
-    <div style={{ background: "#0c0d21" }}>
+    <>
       <Sidebar
         pageWrapId={"page-wrap"}
         outerContainerId={"App"}
@@ -14,10 +14,8 @@ function App() {
       />
 
       <Navbar />
-      <div style={{ marginLeft: "400px" }}>
-        <Main />
-      </div>
-    </div>
+      <MainPage />
+    </>
   );
 }
 
