@@ -4,7 +4,6 @@ import "./styles.css";
 import SidebarElement from "../../components/SidebarElement";
 import { sidebarActivities, sidebarOthers } from "../../api/data";
 import igdbLogo from "../../assets/igdb.svg";
-import { Seperator } from "../../components/Seperator/styles.elements";
 import { Header, HeaderWrapper, ImageWrapper, LinksWrapper } from "./styles.elements";
 const Index = (props: any) => {
   return (

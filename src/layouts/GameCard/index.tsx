@@ -1,6 +1,3 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import sampleImg from "../../assets/gameSample.svg";
 import { Seperator } from "../../components/Seperator/styles.elements";
 import {
   CardBody,
@@ -21,10 +18,10 @@ function Index(props: any) {
     <CardBoot>
       <CardImage variant="top" src={props.image} />
       <CardBody>
-        <CardTitle>{props.title}</CardTitle>
+        <CardTitle style={{fontSize:"1.3rem"}}>{props.title}</CardTitle>
 
-        <CardSubtitle>{props.subtitle}</CardSubtitle>
-        <CardText>{props.description}</CardText>
+        <CardSubtitle style={{fontSize:"0.875rem"}}>{props.subtitle}</CardSubtitle>
+        <CardText style={{fontSize:"1rem"}}>{props.description}</CardText>
         <Seperator />
         <Links>
           <Icon src={dart} />

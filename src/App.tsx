@@ -1,34 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import { Button } from "react-bootstrap";
-import SearchBar from "./components/SearchBar";
 import "./components/SearchBar/index.css";
-import styled from "styled-components";
 import Navbar from "./layouts/Navbar";
 import Sidebar from "./layouts/Sidebar";
-import Games from "./layouts/Games";
-import fetchData from "./api/rawg";
-import Chips from "./components/Chips";
+import Main from "./layouts/Main";
 function App() {
-  const [products, setProducts] = useState([]);
-  const [games,setGames] = useState([]);
-  const handleProductChange = (value: any) => {
-    setProducts(value);
-  };
-  const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-`;
   return (
-    <div style={{background:"#0c0d21"}}>
-          <Sidebar pageWrapId={"page-wrap"} outerContainerId={"App"} isOpen={true} />
+    <div style={{ background: "#0c0d21" }}>
+      <Sidebar
+        pageWrapId={"page-wrap"}
+        outerContainerId={"App"}
+        isOpen={true}
+      />
 
       <Navbar />
-      <div style={{marginLeft:"400px"}} >
-    
-     <Games/>
+      <div style={{ marginLeft: "400px" }}>
+        <Main />
       </div>
-  </div>
+    </div>
   );
 }
 

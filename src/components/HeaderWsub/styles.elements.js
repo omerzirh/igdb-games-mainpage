@@ -8,8 +8,10 @@ flex-direction: column;
 color:white;
 `;
 export const Title= styled.h4`
+font-size:1rem;
 
 `;
 export const Subtitle= styled.h6`
-
+font-size:1rem;
+color:#818694;
 `;

@@ -4,7 +4,7 @@ const fetchData = async (path) => {
   if (path) {
     try {
       const data = await axios.get(
-        `https://api.rawg.io/api/${path}?key=e8eac58cc54e4fa9bb8982aebeefcf48`
+        `https://api.rawg.io/api/${path}?key=${process.env.REACT_APP_RAWG_KEY}`
       )
       return data.data
     } catch (err) {

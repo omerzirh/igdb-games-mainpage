@@ -19,17 +19,17 @@ export const sidebarActivities=[
 ];
 export const sidebarOthers=[
     {
-        id:'act_1',
+        id:'oth_1',
         name:"News",
         icon:faMicrophone
     },
     {
-        id:'act_2',
+        id:'oth_2',
         name:"Partners",
         icon:faChessKnight
     },
     {
-        id:'act_3',
+        id:'oth_3',
         name:"About",
         icon:faW
     },
